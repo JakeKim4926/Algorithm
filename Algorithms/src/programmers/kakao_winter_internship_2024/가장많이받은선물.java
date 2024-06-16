@@ -2,6 +2,8 @@ package programmers.kakao_winter_internship_2024;
 
 import java.util.HashMap;
 
+// https://github.com/JakeKim4926/Algorithm
+
 public class 가장많이받은선물 {
     public int solution(String[] friends, String[] gifts) {
         int answer = 0;
