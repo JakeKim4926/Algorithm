@@ -9,19 +9,20 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-class Point {
-    int X;
-    int nCount;
-
-    public Point(int x, int nCount) {
-        super();
-        X = x;
-        this.nCount = nCount;
-    }
-
-}
 
 public class 숨바꼭질 {
+    static class Point {
+        int X;
+        int nCount;
+
+        public Point(int x, int nCount) {
+            super();
+            X = x;
+            this.nCount = nCount;
+        }
+
+    }
+
     static BufferedWriter bWriter = new BufferedWriter(new OutputStreamWriter(System.out));
     static boolean[] barrVisited;
     static int nSecond = 0;
@@ -77,4 +78,3 @@ public class 숨바꼭질 {
         }
     }
 }
-출처: https://heih.tistory.com/101 [Hope Everyone Is Happy:티스토리]
