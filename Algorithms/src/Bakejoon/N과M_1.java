@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class 가장많이받은선물 {
+public class N과M_1 {
     public static int[] narr = new int[10];
     public static boolean[] barrSearch = new boolean[10];
     static BufferedWriter bWriter = new BufferedWriter(new OutputStreamWriter(System.out));
