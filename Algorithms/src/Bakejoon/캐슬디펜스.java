@@ -10,20 +10,20 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-class Point {
-    int m_nRow;
-    int m_nCol;
-    int m_nDistance;
+public class 캐슬디펜스 {
+    static class Point {
+        int m_nRow;
+        int m_nCol;
+        int m_nDistance;
 
-    public Point(int m_nRow, int m_nCol, int m_nDistance) {
-        this.m_nRow = m_nRow;
-        this.m_nCol = m_nCol;
-        this.m_nDistance = m_nDistance;
+        public Point(int m_nRow, int m_nCol, int m_nDistance) {
+            this.m_nRow = m_nRow;
+            this.m_nCol = m_nCol;
+            this.m_nDistance = m_nDistance;
+        }
+
     }
 
-}
-
-public class 캐슬디펜스 {
     static boolean[][] barrVisited;
     static boolean[][] barrAttacked;
     static boolean[][] barrMap;
