@@ -5,52 +5,48 @@ import java.util.HashMap;
 // https://github.com/JakeKim4926/Algorithm
 
 public class 가장많이받은선물 {
-    public int solution(String[] friends, String[] gifts) {
+    public static int solution(String[] friends, String[] gifts) {
+
         int answer = 0;
-        HashMap<String, Integer> presents = new HashMap<>();
 
-        int index = 0;
-        for (String friend : friends) {
-            presents.put(friend, index++);
+        HashMap<String, Integer> friendsMap = new HashMap<>();
+        for(int i = 0; i < friends.length; i++) {
+            friendsMap.put(friends[i], i);
         }
 
-        int[][] arrPresents = new int[friends.length][friends.length];
+        int[][] presents = new int[friends.length][friends.length];
+        int[] presentValues = new int[friends.length];
 
-        for (String gift : gifts) {
-            String from = gift.split(" ")[0];
-            String to = gift.split(" ")[1];
+        for(int i = 0; i < gifts.length; i++) {
+            String from = gifts[i].split(" ")[0];
+            String to = gifts[i].split(" ")[1];
 
-            int fromIndex = presents.get(from);
-            int toIndex = presents.get(to);
-
-            arrPresents[fromIndex][toIndex]++;
+            presents[friendsMap.get(from)][friendsMap.get(to)]++;
+            presentValues[friendsMap.get(from)]++;
+            presentValues[friendsMap.get(to)]--;
         }
 
-        int[] presentsCount = new int[arrPresents.length];
-        int dr[] = {0,0,1,-1};
-        int dc[] = {1,-1,0,0};
+        int[] results = new int[friends.length];
 
-        for (int i = 0; i < arrPresents.length; i++) {
-            int row = i;
-            int col = i;
-            for(int j = 0; j < dr.length; j++) {
-                int movedRow = row + dr[j];
-                int movedCol = col + dc[j];
+        for(int i = 0; i < friends.length-1; i++) {
+            for(int j = 0; j < friends.length;j++){
+                if(i == j)
+                    continue;
 
-                while(movedCol >= 0 && movedCol < arrPresents.length
-                        && movedRow >= 0 && movedRow < arrPresents.length) {
-                    if(j < 2)
-                        presentsCount[i]++;
-                    else
-                        presentsCount[i]--;
-
-                    movedRow = row + dr[j];
-                    movedCol = col + dc[j];
+                if(presents[i][j] != presents[j][i]) {
+                    if(presents[i][j] > presents[j][i])
+                        results[i]++;
+                } else if(presentValues[i] > presentValues[j]){
+                    results[i]++;
                 }
-
-
             }
         }
+
+        for(int i = 0; i < friends.length; i++) {
+            if(answer < results[i])
+                answer = results[i];
+        }
+
 
         return answer;
     }
