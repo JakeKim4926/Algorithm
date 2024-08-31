@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b6d8b47-b7b7-4639-b885-1f03422806e4" name="Changes" comment="" />
+    <list default="true" id="9b6d8b47-b7b7-4639-b885-1f03422806e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/멀리뛰기.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/멀리뛰기.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +79,8 @@
       <workItem from="1723535719852" duration="992000" />
       <workItem from="1723629027153" duration="1413000" />
       <workItem from="1723956735789" duration="751000" />
-      <workItem from="1725007207400" duration="32000" />
+      <workItem from="1725007207400" duration="737000" />
+      <workItem from="1725089688833" duration="14000" />
     </task>
     <servers />
   </component>
