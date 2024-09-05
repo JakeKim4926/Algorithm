@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9b6d8b47-b7b7-4639-b885-1f03422806e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/kakao_winter_internship_2019/크레인인형뽑기게임.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/크레인인형뽑기게임.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/kakao_winter_internship_2024/가장많이받은선물.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/가장많이받은선물.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/합승택시요금.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/합승택시요금.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,8 @@
       <workItem from="1725089688833" duration="42000" />
       <workItem from="1725246749067" duration="238000" />
       <workItem from="1725342940436" duration="61000" />
-      <workItem from="1725435040642" duration="74000" />
+      <workItem from="1725435040642" duration="137000" />
+      <workItem from="1725512389637" duration="904000" />
     </task>
     <servers />
   </component>
