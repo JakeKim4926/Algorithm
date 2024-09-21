@@ -1,5 +1,7 @@
 package programmers;
 
+import java.util.*;
+
 public class HIndex {
     public int solution(int[] citations) {
         int answer = 0;
