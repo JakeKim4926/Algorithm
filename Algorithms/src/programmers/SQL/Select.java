@@ -53,6 +53,10 @@ public class Select {
 //    HAVING A.ADDRESS LIKE '서울%'
 //    ORDER BY SCORE DESC, A.FAVORITES DESC;
 
+//    인기있는 아이스크림
+//    SELECT FLAVOR
+//    FROM FIRST_HALF
+//    ORDER BY TOTAL_ORDER DESC, SHIPMENT_ID ASC;
 }
 
 
