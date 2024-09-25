@@ -1,9 +1,7 @@
-import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import Test.Sorting;
 
+import java.io.*;
+import java.util.*;
 
 
 public class Main {
@@ -13,7 +11,9 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int result = 0;
 
-        bw.write(String.valueOf(result));
+        Sorting s = new Sorting();
+
+        bw.write(Arrays.toString(s.people));
         bw.close();
     }
 }
