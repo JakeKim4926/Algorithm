@@ -57,6 +57,12 @@ public class Select {
 //    SELECT FLAVOR
 //    FROM FIRST_HALF
 //    ORDER BY TOTAL_ORDER DESC, SHIPMENT_ID ASC;
+
+//    강원도에 위치한 생산공장 목록 출력하기
+//    SELECT FACTORY_ID, FACTORY_NAME, ADDRESS
+//    FROM FOOD_FACTORY
+//    HAVING ADDRESS LIKE '강원도%'
+//    ORDER BY FACTORY_ID ASC;
 }
 
 
