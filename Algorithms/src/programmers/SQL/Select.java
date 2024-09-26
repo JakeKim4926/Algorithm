@@ -63,6 +63,12 @@ public class Select {
 //    FROM FOOD_FACTORY
 //    HAVING ADDRESS LIKE '강원도%'
 //    ORDER BY FACTORY_ID ASC;
+
+//    12세 이하인 여자 환자 목록 출력하기
+//    SELECT PT_NAME, PT_NO, GEND_CD, AGE, IFNULL(TLNO, "NONE")
+//    FROM PATIENT
+//    WHERE (AGE <= 12 AND GEND_CD='W')
+//    ORDER BY AGE DESC, PT_NAME ASC;
 }
 
 
