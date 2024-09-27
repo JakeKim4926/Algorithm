@@ -69,6 +69,19 @@ public class Select {
 //    FROM PATIENT
 //    WHERE (AGE <= 12 AND GEND_CD='W')
 //    ORDER BY AGE DESC, PT_NAME ASC;
+
+//    조건에 맞는 도서 리스트 출력하기
+//    SELECT
+//        BOOK_ID, DATE_FORMAT(PUBLISHED_DATE, '%Y-%m-%d') AS PUBLISHED_DATE
+//    FROM
+//            BOOK
+//    WHERE
+//        DATE_FORMAT(PUBLISHED_DATE, '%Y')='2021'
+//        AND CATEGORY='인문'
+//    ORDER BY
+//        PUBLISHED_DATE ASC;
+
+    
 }
 
 
