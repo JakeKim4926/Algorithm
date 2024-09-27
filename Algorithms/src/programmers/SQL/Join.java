@@ -24,4 +24,21 @@ public class Join {
 //        FEE DESC,
 //        A.CAR_TYPE ASC,
 //        A.CAR_ID DESC;
+
+//    5월 식품들의 총매출 조회하기
+//    SELECT
+//    A.PRODUCT_ID, A.PRODUCT_NAME, SUM(A.PRICE * B.AMOUNT) AS TOTAL_SALES
+//    FROM
+//    FOOD_PRODUCT A
+//    RIGHT JOIN
+//    FOOD_ORDER B
+//    ON A.PRODUCT_ID=B.PRODUCT_ID
+//            WHERE
+//    DATE_FORMAT(B.PRODUCE_DATE, "%Y-%m")='2022-05'
+//    GROUP BY
+//    A.PRODUCT_NAME
+//    ORDER BY
+//    TOTAL_SALES DESC,
+//    A.PRODUCT_ID ASC;
+
 }
