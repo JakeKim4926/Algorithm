@@ -41,4 +41,18 @@ public class Join {
 //        TOTAL_SALES DESC,
 //        A.PRODUCT_ID ASC;
 
+//    주문량이 많은 아이스크림들 조회하기
+//    SELECT
+//    A.FLAVOR
+//            FROM
+//    FIRST_HALF A
+//    JOIN
+//    JULY B
+//    ON A.FLAVOR=B.FLAVOR
+//    GROUP BY
+//    A.FLAVOR
+//    ORDER BY
+//    SUM(A.TOTAL_ORDER + B.TOTAL_ORDER) DESC
+//    LIMIT 3;
+
 }
