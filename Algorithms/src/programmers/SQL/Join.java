@@ -43,16 +43,29 @@ public class Join {
 
 //    주문량이 많은 아이스크림들 조회하기
 //    SELECT
-//    A.FLAVOR
-//            FROM
-//    FIRST_HALF A
+//        A.FLAVOR
+//    FROM
+//        FIRST_HALF A
 //    JOIN
-//    JULY B
-//    ON A.FLAVOR=B.FLAVOR
+//        JULY B
+//        ON A.FLAVOR=B.FLAVOR
 //    GROUP BY
-//    A.FLAVOR
+//        A.FLAVOR
 //    ORDER BY
-//    SUM(A.TOTAL_ORDER + B.TOTAL_ORDER) DESC
+//        SUM(A.TOTAL_ORDER + B.TOTAL_ORDER) DESC
 //    LIMIT 3;
+
+//    조건에 맞는 도서와 저자 리스트 출력하기
+//    SELECT
+//        A.BOOK_ID, B    .AUTHOR_NAME, DATE_FORMAT(A.PUBLISHED_DATE, '%Y-%m-%d') AS PUBLISHED_DATE
+//    FROM
+//        BOOK A
+//    JOIN
+//        AUTHOR B
+//        ON A.AUTHOR_ID=B.AUTHOR_ID
+//    WHERE
+//        A.CATEGORY='경제'
+//    ORDER BY
+//        A.PUBLISHED_DATE ASC;
 
 }
