@@ -87,4 +87,17 @@ public class Join {
 //    ORDER BY
 //        B.REVIEW_DATE ASC,
 //        B.REVIEW_TEXT ASC;
+
+//    없어진 기록 찾기
+//    SELECT
+//        B.ANIMAL_ID, B.NAME
+//    FROM
+//        ANIMAL_INS A
+//    RIGHT JOIN
+//        ANIMAL_OUTS B
+//        ON A.ANIMAL_ID = B.ANIMAL_ID
+//    WHERE
+//        A.ANIMAL_ID IS NULL
+//    ORDER BY
+//        B.ANIMAL_ID;
 }
