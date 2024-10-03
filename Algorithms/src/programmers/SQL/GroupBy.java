@@ -34,4 +34,36 @@ public class GroupBy {
 //    ORDER BY
 //        B.AUTHOR_ID,
 //        A.CATEGORY DESC;
+    
+//    대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기
+//    SELECT
+//        DATE_FORMAT(START_DATE, '%m') AS MONTH,
+//    CAR_ID,
+//        COUNT(CAR_ID) AS RECORDS
+//    FROM
+//            CAR_RENTAL_COMPANY_RENTAL_HISTORY
+//    WHERE
+//        DATE_FORMAT(START_DATE,'%Y-%m') >='2022-08'
+//        AND DATE_FORMAT(START_DATE,'%Y-%m') <= '2022-10'
+//        AND CAR_ID IN (
+//            SELECT
+//                CAR_ID
+//            FROM
+//                CAR_RENTAL_COMPANY_RENTAL_HISTORY
+//            WHERE
+//                DATE_FORMAT(START_DATE,'%Y-%m') >='2022-08'
+//                AND DATE_FORMAT(START_DATE,'%Y-%m') <= '2022-10'
+//            GROUP BY
+//                CAR_ID
+//            HAVING
+//                COUNT(CAR_ID) > 4
+//            )
+//    GROUP BY
+//        MONTH, CAR_ID
+//    HAVING
+//        RECORDS > 0
+//    ORDER BY
+//        MONTH,
+//        CAR_ID DESC;
+
 }
