@@ -34,7 +34,7 @@ public class GroupBy {
 //    ORDER BY
 //        B.AUTHOR_ID,
 //        A.CATEGORY DESC;
-    
+
 //    대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기
 //    SELECT
 //        DATE_FORMAT(START_DATE, '%m') AS MONTH,
