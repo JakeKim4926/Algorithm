@@ -202,5 +202,20 @@ public class GroupBy {
 //        ANIMAL_TYPE
 //    ORDER BY
 //        ANIMAL_TYPE;
+
+//    동명 동물 수 찾기
+//    SELECT
+//        NAME,
+//        COUNT(*) AS COUNT
+//    FROM
+//        ANIMAL_INS
+//    WHERE
+//        NAME IS NOT NULL
+//    GROUP BY
+//        NAME
+//    HAVING
+//        COUNT >= 2
+//    ORDER BY
+//        NAME;
 }
 
