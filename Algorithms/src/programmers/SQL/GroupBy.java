@@ -217,5 +217,27 @@ public class GroupBy {
 //        COUNT >= 2
 //    ORDER BY
 //        NAME;
+
+//    년, 월, 성별 별 상품 구매 회원 수 구하기
+//    SELECT
+//        YEAR(B.SALES_DATE) AS YEAR,
+//        MONTH(B.SALES_DATE) AS MONTH,
+//        A.GENDER AS GENDER,
+//        COUNT(DISTINCT A.USER_ID) AS USERS
+//    FROM
+//        USER_INFO A
+//    JOIN
+//        ONLINE_SALE B
+//        ON A.USER_ID=B.USER_ID
+//    WHERE
+//        A.GENDER IS NOT NULL
+//    GROUP BY
+//        YEAR(B.SALES_DATE),
+//        MONTH(B.SALES_DATE),
+//        A.GENDER
+//    ORDER BY
+//        YEAR,
+//        MONTH,
+//        GENDER;
 }
 
