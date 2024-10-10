@@ -7,7 +7,6 @@
     <list default="true" id="9b6d8b47-b7b7-4639-b885-1f03422806e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/SQL/GroupBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/SQL/GroupBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/구명보트.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/구명보트.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
       <workItem from="1728114203718" duration="3235000" />
       <workItem from="1728267833954" duration="5236000" />
       <workItem from="1728369297065" duration="1991000" />
-      <workItem from="1728518884335" duration="3202000" />
+      <workItem from="1728518884335" duration="3546000" />
     </task>
     <servers />
   </component>
