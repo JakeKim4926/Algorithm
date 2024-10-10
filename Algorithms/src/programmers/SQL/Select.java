@@ -119,6 +119,15 @@ public class Select {
 //        PRODUCT_ID,
 //        USER_ID;
 
+//    조건에 맞는 회원수 구하기
+//    SELECT
+//        COUNT(USER_ID) AS USERS
+//    FROM
+//            USER_INFO
+//    WHERE
+//        YEAR(JOINED)='2021'
+//        AND AGE BETWEEN 20 AND 29;
+
 }
 
 
