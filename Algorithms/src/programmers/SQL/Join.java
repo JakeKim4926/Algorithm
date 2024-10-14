@@ -127,4 +127,24 @@ public class Join {
 //    ORDER BY
 //        A.DATETIME
 //    LIMIT 3;
+
+//    조건에 맞는 사원 정보 조회하기
+//    SELECT
+//        SUM(B.SCORE) AS SCORE,
+//        A.EMP_NO AS EMP_NO,
+//        A.EMP_NAME AS EMP_NAME,
+//        A.POSITION AS POSITION,
+//        A.EMAIL AS EMAIL
+//    FROM
+//        HR_EMPLOYEES A
+//    JOIN
+//        HR_GRADE B
+//        ON A.EMP_NO=B.EMP_NO
+//    WHERE
+//        B.YEAR='2022'
+//    GROUP BY
+//        B.EMP_NO, A.EMP_NAME
+//    ORDER BY
+//        SCORE DESC
+//    LIMIT 1;
 }
