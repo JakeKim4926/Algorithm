@@ -147,4 +147,36 @@ public class Join {
 //    ORDER BY
 //        SCORE DESC
 //    LIMIT 1;
+
+//    연간 평가점수에 해당하는 평가 등급 및 성과금 조회하기
+//    SELECT
+//        A.EMP_NO,
+//        A.EMP_NAME,
+//        CASE
+//            WHEN AVG(B.SCORE) >= 96
+//            THEN 'S'
+//            WHEN AVG(B.SCORE) >= 90
+//            THEN 'A'
+//            WHEN AVG(B.SCORE) >= 80
+//            THEN 'B'
+//            ELSE 'C'
+//        END AS GRADE,
+//        CASE
+//            WHEN AVG(B.SCORE) >= 96
+//            THEN A.SAL * 20 / 100
+//            WHEN AVG(B.SCORE) >= 90
+//            THEN A.SAL * 15 / 100
+//            WHEN AVG(B.SCORE) >= 80
+//            THEN A.SAL * 10 / 100
+//            ELSE 0
+//        END AS BONUS
+//    FROM
+//        HR_EMPLOYEES A
+//    JOIN
+//        HR_GRADE B
+//        ON A.EMP_NO=B.EMP_NO
+//    GROUP BY
+//        A.EMP_NO
+//    ORDER BY
+//        A.EMP_NO;
 }
