@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b6d8b47-b7b7-4639-b885-1f03422806e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/SQL/GroupBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/SQL/GroupBy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms/src/programmers/SQL/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/programmers/SQL/Join.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +141,7 @@
       <workItem from="1728644732054" duration="2521000" />
       <workItem from="1728739133400" duration="2351000" />
       <workItem from="1728803600456" duration="4988000" />
-      <workItem from="1728867452529" duration="7969000" />
+      <workItem from="1728867452529" duration="8486000" />
     </task>
     <servers />
   </component>
