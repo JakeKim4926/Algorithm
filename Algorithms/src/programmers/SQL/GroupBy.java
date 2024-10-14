@@ -385,5 +385,19 @@ public class GroupBy {
 //        ROUTE
 //    ORDER BY
 //        SUM(D_BETWEEN_DIST) DESC;
+
+//    물고기 종류 별 잡은 수 구하기
+//    SELECT
+//        COUNT(*) AS FISH_COUNT,
+//        B.FISH_NAME AS FISH_NAME
+//    FROM
+//        FISH_INFO A
+//    JOIN
+//        FISH_NAME_INFO B
+//        ON A.FISH_TYPE=B.FISH_TYPE
+//    GROUP BY
+//        A.FISH_TYPE, B.FISH_NAME
+//    ORDER BY
+//        FISH_COUNT DESC;
 }
 
