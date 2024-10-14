@@ -410,5 +410,26 @@ public class GroupBy {
 //        MONTH
 //    ORDER BY
 //        MONTH;
+
+//    특정 조건을 만족하는 물고기별 수와 최대 길이 구하기
+//    SELECT
+//        COUNT(*) AS FISH_COUNT,
+//        MAX(LENGTH) AS MAX_LENGTH,
+//        FISH_TYPE
+//    FROM
+//        FISH_INFO
+//    GROUP BY
+//        FISH_TYPE
+//    HAVING
+//        AVG(
+//            CASE
+//                WHEN LENGTH < 10 THEN 10
+//                WHEN LENGTH IS NULL THEN 0
+//                ELSE LENGTH
+//                END
+//        ) > 32
+//    ORDER BY
+//        FISH_TYPE;
+
 }
 
