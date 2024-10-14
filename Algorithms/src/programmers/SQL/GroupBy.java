@@ -399,5 +399,16 @@ public class GroupBy {
 //        A.FISH_TYPE, B.FISH_NAME
 //    ORDER BY
 //        FISH_COUNT DESC;
+
+//    월별 잡은 물고기 수 구하기
+//    SELECT
+//        COUNT(*) AS FISH_COUNT,
+//        MONTH(TIME) AS MONTH
+//    FROM
+//        FISH_INFO
+//    GROUP BY
+//        MONTH
+//    ORDER BY
+//        MONTH;
 }
 
