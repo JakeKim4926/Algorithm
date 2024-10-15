@@ -50,4 +50,29 @@ public class SumMaxMin {
 //        ITEM_INFO
 //    WHERE
 //        RARITY='LEGEND';
+
+//    물고기 종류 별 대어 찾기
+//    SELECT
+//        A.ID,
+//        B.FISH_NAME AS FISH_NAME,
+//        A.LENGTH AS LENGTH
+//    FROM
+//        FISH_INFO A
+//    JOIN
+//        FISH_NAME_INFO B
+//        ON A.FISH_TYPE=B.FISH_TYPE
+//    WHERE
+//        (A.FISH_TYPE, A.LENGTH) IN (
+//            SELECT
+//                FISH_TYPE,
+//                MAX(LENGTH)
+//            FROM
+//                FISH_INFO
+//            WHERE
+//                LENGTH IS NOT NULL
+//            GROUP BY
+//                FISH_TYPE
+//            )
+//    ORDER BY
+//        A.ID;
 }
