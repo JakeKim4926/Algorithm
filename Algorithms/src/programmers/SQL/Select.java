@@ -226,6 +226,26 @@ public class Select {
 //    WHERE
 //        B.FISH_NAME='BASS'
 //        OR B.FISH_NAME='SNAPPER';
+
+//    대장균들의 자식의 수 구하기
+//    SELECT
+//        A.ID AS ID,
+//        IFNULL(B.C, 0) AS CHILD_COUNT
+//    FROM
+//        ECOLI_DATA A
+//    LEFT JOIN
+//        (
+//            SELECT
+//                PARENT_ID,
+//                COUNT(*) AS C
+//            FROM
+//                ECOLI_DATA
+//            GROUP BY
+//                PARENT_ID
+//        ) B
+//        ON A.ID=B.PARENT_ID
+//    ORDER BY
+//        ID;
 }
 
 
