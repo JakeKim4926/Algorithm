@@ -214,6 +214,18 @@ public class Select {
 //        LENGTH DESC,
 //        ID
 //    LIMIT 10;
+
+//    특정 물고기를 잡은 총 수 구하기
+//    SELECT
+//        COUNT(*) AS FISH_COUNT
+//    FROM
+//        FISH_INFO A
+//    JOIN
+//        FISH_NAME_INFO B
+//        ON A.FISH_TYPE=B.FISH_TYPE
+//    WHERE
+//        B.FISH_NAME='BASS'
+//        OR B.FISH_NAME='SNAPPER';
 }
 
 
