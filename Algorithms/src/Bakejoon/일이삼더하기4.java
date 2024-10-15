@@ -16,7 +16,6 @@ public class 일이삼더하기4 {
                 continue;
             }
 
-
             int[][] dp = new int[N+1][4];
             dp[1][1] = 1;
             dp[2][1] = 1;
