@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b6d8b47-b7b7-4639-b885-1f03422806e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Algorithm/Bakejoon/로봇조종하기.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Algorithm/programmers/SQL/SumMaxMin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/src/Bakejoon/문자열교환.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/Bakejoon/문자열교환.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algorithm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/Main.class" afterDir="false" />
     </list>
@@ -146,7 +143,7 @@
       <workItem from="1728803600456" duration="4988000" />
       <workItem from="1728867452529" duration="17174000" />
       <workItem from="1728951905086" duration="4133000" />
-      <workItem from="1728980820088" duration="2107000" />
+      <workItem from="1728980820088" duration="5282000" />
     </task>
     <servers />
   </component>
