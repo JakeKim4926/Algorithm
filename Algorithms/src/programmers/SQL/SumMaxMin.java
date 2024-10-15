@@ -35,4 +35,13 @@ public class SumMaxMin {
 //    FROM
 //        ANIMAL_INS;
 
+//    중복 제거하기
+//    SELECT
+//        COUNT(DISTINCT NAME)
+//    FROM
+//        ANIMAL_INS
+//    WHERE
+//        NAME IS NOT NULL;
+
+    
 }
