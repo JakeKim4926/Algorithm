@@ -28,5 +28,11 @@ public class SumMaxMin {
 //        MIN(DATETIME)
 //    FROM
 //        ANIMAL_INS;
-    
+
+//    동물 수 구하기
+//    SELECT
+//        COUNT(*)
+//    FROM
+//        ANIMAL_INS;
+
 }
