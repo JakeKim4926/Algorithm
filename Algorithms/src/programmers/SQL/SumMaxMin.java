@@ -82,5 +82,25 @@ public class SumMaxMin {
 //    FROM
 //        FISH_INFO;
 
-    
+//    연도별 대장균 크기의 편차 구하기
+//    SELECT
+//        YEAR(A.DIFFERENTIATION_DATE) AS YEAR,
+//        (B.MAXG - A.SIZE_OF_COLONY) AS YEAR_DEV,
+//        A.ID AS ID
+//    FROM
+//        ECOLI_DATA A
+//    JOIN
+//        (
+//            SELECT
+//                YEAR(DIFFERENTIATION_DATE) AS YEAR,
+//                MAX(SIZE_OF_COLONY) AS MAXG
+//            FROM
+//                    ECOLI_DATA
+//            GROUP BY
+//                YEAR(DIFFERENTIATION_DATE)
+//        ) B
+//        ON YEAR(A.DIFFERENTIATION_DATE)=B.YEAR
+//    ORDER BY
+//        YEAR,
+//        YEAR_DEV;
 }
