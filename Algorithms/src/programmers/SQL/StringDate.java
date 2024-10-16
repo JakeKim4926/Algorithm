@@ -138,4 +138,19 @@ public class StringDate {
 //    ORDER BY
 //        ORDER_ID;
 
+
+//    대여 기록이 존재하는 자동차 리스트 구하기
+//    SELECT
+//        DISTINCT A.CAR_ID
+//    FROM
+//        CAR_RENTAL_COMPANY_CAR A
+//    JOIN
+//        CAR_RENTAL_COMPANY_RENTAL_HISTORY B
+//        ON A.CAR_ID=B.CAR_ID
+//    WHERE
+//        A.CAR_TYPE='세단'
+//        AND MONTH(B.START_DATE)='10'
+//    ORDER BY
+//        A.CAR_ID DESC;
+
 }
