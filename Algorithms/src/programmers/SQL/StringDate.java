@@ -94,4 +94,14 @@ public class StringDate {
 //        DATE_FORMAT(CREATED_DATE, '%Y-%m-%d')='2022-10-05'
 //    ORDER BY
 //        BOARD_ID DESC;
+
+//    특정 옵션이 포함된 자동차 리스트 구하기
+//    SELECT 
+//        *
+//    FROM
+//        CAR_RENTAL_COMPANY_CAR
+//    WHERE
+//        OPTIONS LIKE '%네비게이션%'
+//    ORDER BY
+//        CAR_ID DESC;
 }
