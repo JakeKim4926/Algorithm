@@ -34,4 +34,46 @@ public class StringDate {
 //            )
 //    ORDER BY
 //        FILE_ID DESC;
+
+
+//    자동차 대여 기록 별 대여 금액 구하기
+//    SELECT
+//        B.HISTORY_ID AS HISTORY_ID,
+//    CASE
+//        WHEN (DATEDIFF(B.END_DATE, B.START_DATE) + 1 >= 90)
+//        THEN (A.DAILY_FEE - (
+//                A.DAILY_FEE *
+//                (
+//                SELECT REPLACE(DISCOUNT_RATE, '%', '') FROM CAR_RENTAL_COMPANY_DISCOUNT_PLAN
+//                 WHERE CAR_TYPE='트럭' AND DURATION_TYPE LIKE '90%'
+//                )
+//                / 100)) * (DATEDIFF(B.END_DATE, B.START_DATE) + 1)
+//        WHEN (DATEDIFF(B.END_DATE, B.START_DATE) + 1 >= 30)
+//        THEN (A.DAILY_FEE - (
+//                A.DAILY_FEE *
+//                (
+//                SELECT REPLACE(DISCOUNT_RATE, '%', '') FROM CAR_RENTAL_COMPANY_DISCOUNT_PLAN
+//                WHERE CAR_TYPE='트럭' AND DURATION_TYPE LIKE '30%'
+//                )
+//                / 100)) * (DATEDIFF(B.END_DATE, B.START_DATE) + 1)
+//        WHEN (DATEDIFF(B.END_DATE, B.START_DATE) + 1 >= 7)
+//        THEN (A.DAILY_FEE - (
+//                A.DAILY_FEE *
+//                (
+//                SELECT REPLACE(DISCOUNT_RATE, '%', '') FROM CAR_RENTAL_COMPANY_DISCOUNT_PLAN
+//                WHERE CAR_TYPE='트럭' AND DURATION_TYPE LIKE '7%'
+//                )
+//                / 100)) * (DATEDIFF(B.END_DATE, B.START_DATE) + 1)
+//        ELSE A.DAILY_FEE * (DATEDIFF(B.END_DATE, B.START_DATE) + 1)
+//    END AS FEE
+//    FROM
+//        CAR_RENTAL_COMPANY_CAR A
+//    JOIN
+//        CAR_RENTAL_COMPANY_RENTAL_HISTORY B
+//        ON A.CAR_ID=B.CAR_ID
+//    WHERE
+//        A.CAR_TYPE='트럭'
+//    ORDER BY
+//        FEE DESC,
+//        HISTORY_ID DESC;
 }
