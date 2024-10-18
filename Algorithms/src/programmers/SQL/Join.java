@@ -158,4 +158,32 @@ public class Join {
 //    ORDER BY
 //        SALES DESC,
 //        PRODUCT_CODE;
+
+//    상품을 구매한 회원 비율 구하기
+//    SELECT
+//        YEAR(B.SALES_DATE) AS YEAR,
+//        MONTH(B.SALES_DATE) AS MONTH,
+//        COUNT(DISTINCT B.USER_ID) AS PURCHASED_USERS,
+//        ROUND(COUNT(DISTINCT B.USER_ID) /
+//                (
+//                    SELECT
+//                    COUNT(*)
+//                    FROM
+//                            USER_INFO
+//                    WHERE
+//                    YEAR(JOINED)='2021'
+//                ), 1) AS PUCHASED_RATIO
+//    FROM
+//        USER_INFO A
+//    JOIN
+//        ONLINE_SALE B
+//        ON A.USER_ID=B.USER_ID
+//    WHERE
+//        YEAR(A.JOINED)='2021'
+//    GROUP BY
+//        YEAR(B.SALES_DATE),
+//        MONTH(B.SALES_DATE)
+//    ORDER BY
+//        YEAR,
+        MONTH;
 }
