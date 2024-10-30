@@ -49,7 +49,6 @@ public class Select {
 //    SELECT A.REST_ID, A.REST_NAME, A.FOOD_TYPE, A.FAVORITES, A.ADDRESS, ROUND(AVG(B.REVIEW_SCORE), 2) AS SCORE
 //    FROM REST_INFO A
 //    JOIN REST_REVIEW B ON A.REST_ID=B.REST_ID
-//    GROUP BY A.REST_ID
 //    HAVING A.ADDRESS LIKE '서울%'
 //    ORDER BY SCORE DESC, A.FAVORITES DESC;
 
@@ -62,7 +61,7 @@ public class Select {
 //    SELECT FACTORY_ID, FACTORY_NAME, ADDRESS
 //    FROM FOOD_FACTORY
 //    HAVING ADDRESS LIKE '강원도%'
-//    ORDER BY FACTORY_ID ASC;
+//    ORDER BY FACTORY_ID ASC;//    GROUP BY A.REST_ID
 
 //    12세 이하인 여자 환자 목록 출력하기
 //    SELECT PT_NAME, PT_NO, GEND_CD, AGE, IFNULL(TLNO, "NONE")
@@ -246,6 +245,15 @@ public class Select {
 //        ON A.ID=B.PARENT_ID
 //    ORDER BY
 //        ID;
+
+//    특정 형질을 가지는 대장균 찾기
+//    SELECT
+//        COUNT(*) AS COUNT
+//    FROM
+//        ECOLI_DATA
+//    WHERE
+//        (5 & GENOTYPE) > 0
+//        AND (2 & GENOTYPE) < 1 ;
 }
 
 
