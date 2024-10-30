@@ -9,8 +9,12 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int W = Integer.parseInt(st.nextToken());
+        int S = Integer.parseInt(st.nextToken());
 
-//        bw.write(String.valueOf(dp[D]));
+
+//        bw.write(String.valueOf(answer));
         bw.close();
     }
 }
