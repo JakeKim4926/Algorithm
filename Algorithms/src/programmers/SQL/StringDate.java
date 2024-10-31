@@ -187,4 +187,26 @@ public class StringDate {
 //    ORDER BY
 //        ANIMAL_ID;
 
+//    취소되지 않은 진료 예약 조회하기
+//    SELECT
+//        C.APNT_NO,
+//        A.PT_NAME,
+//        A.PT_NO,
+//        C.MCDP_CD,
+//        B.DR_NAME,
+//        C.APNT_YMD
+//    FROM
+//        APPOINTMENT C
+//    JOIN
+//        PATIENT A
+//        ON A.PT_NO=C.PT_NO
+//    JOIN
+//        DOCTOR B
+//        ON B.DR_ID=C.MDDR_ID
+//    WHERE
+//        DATE_FORMAT(C.APNT_YMD, '%Y-%m-%d')='2022-04-13'
+//        AND C.APNT_CNCL_YN='N'
+//        AND C.MCDP_CD='CS'
+//    ORDER BY
+//        C.APNT_YMD;
 }
